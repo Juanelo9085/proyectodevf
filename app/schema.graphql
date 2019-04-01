@@ -6,6 +6,7 @@ type Query {
 
 type Mutation {
   signup(data: UserCreateInput!): Auth # recibe un data(es un arreglo de datos) y regresa Auth
+  login(email: String!, password: String!): Auth
 }
 
 type Auth {
